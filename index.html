@@ -1,48 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vir Silvae Studios</title>
+
     <style>
-        body {
-            background: #111;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        h1 {
-            font-size: 4em;
+        body {
+            background-color: #0d0f0e;
+            color: #e8e4dc;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.85)
+                ),
+                radial-gradient(
+                    circle at center,
+                    #243128,
+                    #0d0f0e 70%
+                );
+
+            padding: 20px;
+        }
+
+        .logo {
+            width: 600px;
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 35px;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            color: #c8c1b5;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 30px;
+            border: 1px solid #c4a35a;
+            color: #c4a35a;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #c4a35a;
+            color: #0d0f0e;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 30px;
+        }
+
+        h2 {
+            color: #c4a35a;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
         }
 
         p {
-            font-size: 1.2em;
+            margin-bottom: 30px;
         }
 
-        .project {
-            margin-top: 50px;
-            font-size: 1.5em;
+        footer {
+            border-top: 1px solid #222;
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 350px;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
-
 <body>
 
-    <h1>Vir Silvae Studios</h1>
+    <header>
 
-    <p>Creating worlds worth exploring.</p>
+        <img
+            src="images/VirSilvaeLogo.png"
+            alt="Vir Silvae Studios Logo"
+            class="logo">
 
-    <div class="project">
-        Current Project:<br>
-        <strong>Clockwork Courier</strong>
-    </div>
+        <p class="tagline">
+            Independent games forged from shadow, steel, and the wild places between.
+        </p>
 
-    <br><br>
+        <a class="button" href="mailto:contact@virsilvaestudios.com">
+            Contact Us
+        </a>
 
-    <p>
-        Contact:<br>
-        ereck@virsilvaestudios.com
-    </p>
+    </header>
+
+    <section>
+
+        <h2>About Vir Silvae Studios</h2>
+
+        <p>
+            Vir Silvae Studios is an independent game development studio dedicated
+            to creating memorable worlds, compelling gameplay, and unique adventures.
+            We believe great games are built through passion, craftsmanship,
+            and a relentless pursuit of quality.
+        </p>
+
+        <h2>Current Development</h2>
+
+        <p>
+            Our first project is currently in development, drawing inspiration from
+            classic 3D platforming adventures while introducing its own identity,
+            atmosphere, and challenges.
+        </p>
+
+        <h2>Business Inquiries</h2>
+
+        <p>
+            For streamer partnerships, press requests, investment opportunities,
+            and business discussions, please contact us through our studio email.
+        </p>
+
+    </section>
+
+    <footer>
+        © 2026 Vir Silvae Studios. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
